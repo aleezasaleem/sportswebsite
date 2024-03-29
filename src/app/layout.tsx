@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 
 const oswald = Oswald({
   weight:['200','300','400','500','600','700'],
-  subsets:['latin-ext']
+  subsets:['latin']
 })
 
 export const metadata: Metadata = {
