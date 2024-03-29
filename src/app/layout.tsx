@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
 import "./globals.css";
+import Responsive from "./components/Navbar/Responsive";
+import Footer from "./components/Footer/Footer";
 
 
 
-const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({
+  weight:['200','300','400','500','600','700'],
+  subsets:['latin-ext']
+})
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "This is my portfolio",
+  title: "Sports Website Template",
+  description: "This is my sport website",
 };
 
 export default function RootLayout({
@@ -18,9 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-   
+      <body className={oswald.className}>
+   <Responsive />
         {children}</body>
+        <Footer />
     </html>
   );
 }

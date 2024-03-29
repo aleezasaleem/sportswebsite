@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .heading{
+        @apply text-white text-[25px] md:text-[35px] font-semibold w-[80%] mx-auto
+    }
+}
