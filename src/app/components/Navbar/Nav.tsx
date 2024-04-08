@@ -9,7 +9,7 @@ interface Props{
 
 function Nav({openNav}:Props) {
   return (
-    <div className='h-[12vh] shadow-md'>
+    <div className='h-[12vh] shadow-md sticky'>
         <div className='flex items-center justify-between h-[100%] w-[90%] mx-auto '>
     <Image src={Logo} alt='logo' width={80} height={80}  />
     <ul className='hidden lg:flex items-center space-x-16 '>
